@@ -3,9 +3,9 @@ const rock = "ROCK";
 const paper = "PAPER";
 const scissors = "SCISSORS";
 
-"ROCK" > "SCISSORS";
+/*"ROCK" > "SCISSORS";
 "SCISSORS" > "PAPER";
-"PAPER" > "ROCK";
+"PAPER" > "ROCK";*/
 
 //const playerSelection = userChoice;
 //const computerSelection = computerPlay();
@@ -24,11 +24,11 @@ function playerSelection(){
 
 function playRound(playerSelection, computerPlay){
     if (playerSelection > computerPlay){
-        console.log("You win! " + playerSelection + " beats " + computerPlay + ".");
+        return ("You win! " + playerSelection + " beats " + computerPlay + ".");
     } else if (playerSelection < computerPlay){
-        console.log("You lose! " + computerPlay + " beats " + playerSelection + ".");
+        return ("You lose! " + computerPlay + " beats " + playerSelection + ".");
     } else {
-        console.log("It's a draw. Both chose " + playerSelection + ".");
+        return ("It's a draw. Both chose " + playerSelection + ".");
     }
 }
    
