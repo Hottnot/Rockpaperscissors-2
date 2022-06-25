@@ -1,7 +1,7 @@
 const choices = ["ROCK", "PAPER", "SCISSORS",];
-const rock = "ROCK";
+/*const rock = "ROCK";
 const paper = "PAPER";
-const scissors = "SCISSORS";
+const scissors = "SCISSORS";*/
 
 /*"ROCK" > "SCISSORS";
 "SCISSORS" > "PAPER";
@@ -23,12 +23,24 @@ function playerSelection(){
 //console.log(playerSelection());
 
 function playRound(playerSelection, computerPlay){
-    if (playerSelection > computerPlay){
+    if (playerSelection = "ROCK", computerPlay = "SCISSORS"){
         return ("You win! " + playerSelection + " beats " + computerPlay + ".");
-    } else if (playerSelection < computerPlay){
+    } else if (playerSelection = "ROCK", computerPlay = "PAPER"){
         return ("You lose! " + computerPlay + " beats " + playerSelection + ".");
-    } else {
+    } else if (playerSelection = "ROCK", computerPlay = "ROCK") {
         return ("It's a draw. Both chose " + playerSelection + ".");
+    } else if (playerSelection = "PAPER", computerPlay = "PAPER"){
+        return ("It's a draw. Both chose " + playerSelection + ".");
+    } else if (playerSelection = "PAPER", computerPlay = "ROCK"){
+        return ("You win! " + playerSelection + " beats " + computerPlay + ".");
+    } else if (playerSelection = "PAPER", computerPlay = "SCISSORS"){
+        return ("You lose! " + computerPlay + " beats " + playerSelection + ".");
+    } else if (playerSelection = "SCISSORS", computerPlay = "SCISSORS"){
+        return ("It's a draw. Both chose " + playerSelection + ".");
+    } else if (playerSelection = "SCISSORS", computerPlay = "PAPER"){
+        return ("You win! " + playerSelection + " beats " + computerPlay + ".");
+    } else {
+        return ("You lose! " + computerPlay + " beats " + playerSelection + ".");
     }
 }
    
