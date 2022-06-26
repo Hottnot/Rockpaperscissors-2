@@ -1,6 +1,6 @@
 const choices = ["ROCK", "PAPER", "SCISSORS",];
 
-let playerSelection = prompt ("Choose Rock, Paper or Scissors").toUpperCase();
+const playerSelection = prompt ("Choose Rock, Paper or Scissors").toUpperCase();
 const computerSelection = computerPlay();
 
 function computerPlay(){
@@ -9,25 +9,30 @@ function computerPlay(){
 }
 
 function playRound(playerSelection, computerSelection){
-    if (playerSelection == "ROCK", computerSelection == "ROCK") {
+   // let playerSelection = prompt ("Choose Rock, Paper or Scissors").toUpperCase();
+
+    if (playerSelection === "ROCK", computerSelection === "ROCK") {
         return ("It's a draw. Both chose " + playerSelection + ".");
-    } else if (playerSelection == "ROCK", computerSelection == "PAPER") {
+    } else if (playerSelection === "ROCK", computerSelection === "PAPER") {
         return ("You lose! " + computerSelection + " beats " + playerSelection + ".");
-    } else if (playerSelection == "ROCK", computerSelection == "SCISSORS") {
+    } else if (playerSelection === "ROCK", computerSelection === "SCISSORS") {
         return ("You win! " + playerSelection + " beats " + computerSelection + ".");
-    } else if (playerSelection == "PAPER", computerSelection == "PAPER"){
+    } else if (playerSelection === "PAPER", computerSelection === "PAPER"){
         return ("It's a draw. Both chose " + playerSelection + ".");
-    } else if (playerSelection == "PAPER", computerSelection == "ROCK"){
+    } else if (playerSelection === "PAPER", computerSelection === "ROCK"){
         return ("You win! " + playerSelection + " beats " + computerSelection + ".");
-    } else if (playerSelection == "PAPER", computerSelection == "SCISSORS"){
+    } else if (playerSelection === "PAPER", computerSelection === "SCISSORS"){
         return ("You lose! " + computerSelection + " beats " + playerSelection + ".");
-    } else if (playerSelection == "SCISSORS", computerSelection == "SCISSORS"){
+    } else if (playerSelection === "SCISSORS", computerSelection === "SCISSORS"){
         return ("It's a draw. Both chose " + playerSelection + ".");
-    } else if (playerSelection == "SCISSORS", computerSelection == "PAPER"){
+    } else if (playerSelection === "SCISSORS", computerSelection === "PAPER"){
         return ("You win! " + playerSelection + " beats " + computerSelection + ".");
     } else {
         return ("You lose! " + computerSelection + " beats " + playerSelection + ".");
     }
 } 
 
+
+
 console.log(playRound(playerSelection, computerSelection));
+
